@@ -3,6 +3,10 @@ const router = express.Router();
 const likesData = require("../Models/data");
 const config = require("../config");
 
+// const cors = require("cors");
+
+// router.use(cors());
+
 const secretUser = config.getUser();
 
 router.get("/getLikes", (req, res, next) => {

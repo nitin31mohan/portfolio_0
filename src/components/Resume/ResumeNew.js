@@ -9,7 +9,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://github.com/nitin31mohan/portfolio_0/blob/master/src/Assets/nitin-mohan-1b676412a.pdf";
+  "https://personal234.s3.us-east-2.amazonaws.com/nitinResume.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -17,6 +17,13 @@ function ResumeNew() {
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
+
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
 
   return (
     <div>
@@ -30,8 +37,10 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={resumeLink}>
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+          <Document file={resumeLink}  onLoadSuccess={({ numPages })=>setNumPages(numPages)}>
+          {Array.apply(null, Array(numPages))
+            .map((x, i)=>i+1)
+            .map(page => <Page pageNumber={page} scale={width > 786 ? 1.7 : 0.6} />)}
           </Document>
         </Row>
 

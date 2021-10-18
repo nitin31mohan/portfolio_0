@@ -3,6 +3,10 @@ const router = express.Router();
 const rankData = require("../Models/data");
 const config = require("../config");
 
+// const cors = require("cors");
+
+// router.use(cors());
+
 const secretUser = config.getUser();
 
 router.get("/getRanks", (req, res, next) => {
