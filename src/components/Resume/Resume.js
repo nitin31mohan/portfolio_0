@@ -15,17 +15,17 @@ function Resume() {
   const [cgpa, upadteCgpa] = useState(0);
 
   useEffect(() => {
-    axios
-      .get(uri)
-      .then((res) => {
-        upadteSpojRank(res.data.message[0].spojRank);
-        upadteHackerank(res.data.message[1].hackerrank);
-        upadteCgpa(res.data.message[2].cgpa);
-        upadateSem(res.data.message[3].sem);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    // axios
+    //   .get(uri)
+    //   .then((res) => {
+    //     upadteSpojRank(res.data.message[0].spojRank);
+    //     upadteHackerank(res.data.message[1].hackerrank);
+    //     upadteCgpa(res.data.message[2].cgpa);
+    //     upadateSem(res.data.message[3].sem);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
   }, []);
 
   return (
