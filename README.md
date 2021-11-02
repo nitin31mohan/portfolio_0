@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v1.0<br/>
-  <a href="http://nitinmohan.tech/" target="_blank">nitinmohan.tech</a>
+  <a href="http://nitin-mohan.tech/" target="_blank">nitin-mohan.tech</a>
 </h2>
 
 <br/>
@@ -18,10 +18,6 @@
     🔹
     <a href="https://github.com/nitin31mohan/portfolio_0/issues">Request Feature</a>
 </h3>
-
-## TL;DR
-
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [nitin31mohan](https://github.com/nitin31mohan/portfolio_0). Thanks!
 
 ## Built With
 
