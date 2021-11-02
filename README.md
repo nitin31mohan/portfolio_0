@@ -25,7 +25,7 @@ You can fork this repo to modify and make changes of your own. Please give me pr
 
 ## Built With
 
-My personal portfolio <a href="http://nitinmohan.tech/" target="_blank">nitinmohan.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
+My personal portfolio <a href="https://nitin-mohan.tech/" target="_blank">nitin-mohan.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
 
 This project was built using the technologies,
 
